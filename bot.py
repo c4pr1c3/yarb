@@ -99,7 +99,7 @@ class dingtalkBot:
     https://open.dingtalk.com/document/robots/custom-robot-access
     """
     def __init__(self, key, proxy_url='') -> None:
-        self.key = key
+        self.key = os.environ.get("DINGTALK_KEY")
         self.proxy = {'http': proxy_url, 'https': proxy_url} if proxy_url else {'http': None, 'https': None}
 
     @staticmethod
