@@ -54,7 +54,7 @@
             "key": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
         },
         "dingtalk": {
-            "enabled": true,
+            "enabled": false,
             "secrets": "DINGTALK_KEY",
             "key": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
         },
