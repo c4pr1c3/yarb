@@ -122,7 +122,7 @@ class dingtalkBot:
                 url = f'https://oapi.dingtalk.com/robot/send?access_token={self.key}'
                 r = requests.post(url=url, headers=headers, data=json.dumps(data), proxies=self.proxy)
 
-                if r.status_code == 200:
+                if r.status_code == 200 and r.text.find("错误描述") < 0:
                     Color.print_success('[+] dingtalkBot 发送成功')
                 else:
                     Color.print_failed('[-] dingtalkBot 发送失败')
